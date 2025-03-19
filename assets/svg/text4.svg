@@ -14,26 +14,11 @@
      id="defs1">
     <linearGradient
        id="linearGradient21">
-      <stop
-         style="stop-color:#fe586e;stop-opacity:1;"
-         offset="0"
-         id="stop22" />
-      <stop
-         style="stop-color:#ff6363;stop-opacity:1;"
-         offset="0.19266054"
-         id="stop24" />
-      <stop
-         style="stop-color:#d6028d;stop-opacity:1;"
-         offset="0.36697248"
-         id="stop25" />
-      <stop
-         style="stop-color:#4d0d59;stop-opacity:1;"
-         offset="0.56422019"
-         id="stop26" />
-      <stop
-         style="stop-color:#181250;stop-opacity:1;"
-         offset="1"
-         id="stop23" />
+      <stop style="stop-color:#fe586e;stop-opacity:1;" offset="0" id="stop22" />
+      <stop style="stop-color:#ff6363;stop-opacity:1;" offset="0.19266054" id="stop24" />
+      <stop style="stop-color:#d6028d;stop-opacity:1;" offset="0.36697248" id="stop25" />
+      <stop style="stop-color:#4d0d59;stop-opacity:1;" offset="0.56422019" id="stop26" />
+      <stop style="stop-color:#181250;stop-opacity:1;" offset="1" id="stop23" />
     </linearGradient>
     <linearGradient
        xlink:href="#linearGradient21"
@@ -44,6 +29,36 @@
        y2="62.912003"
        gradientUnits="userSpaceOnUse" />
   </defs>
+
+  <style>
+    @keyframes faulty-tubelight {
+      0%, 3% { opacity: 1; filter: drop-shadow(0px 0px 5px #ffcc00); }
+      4% { opacity: 0.2; }
+      7% { opacity: 1; }
+      10% { opacity: 0.5; }
+      15% { opacity: 1; }
+      20% { opacity: 0.1; filter: drop-shadow(0px 0px 2px #ff0000); }
+      23% { opacity: 1; filter: drop-shadow(2px 2px 10px #ff9900); }
+      30% { opacity: 0.3; }
+      35% { opacity: 1; }
+      40% { opacity: 0.6; filter: drop-shadow(-2px -2px 15px #ff6600); }
+      50% { opacity: 0.9; }
+      55% { opacity: 0.2; }
+      65% { opacity: 1; }
+      70% { opacity: 0; filter: drop-shadow(0px 0px 7px #d6028d); }
+      73% { opacity: 1; }
+      80% { opacity: 0.4; }
+      85% { opacity: 1; }
+      90% { opacity: 0; }
+      93% { opacity: 1; filter: drop-shadow(0px 0px 10px #ffcc00); }
+      100% { opacity: 1; }
+    }
+
+    text {
+      animation: faulty-tubelight 5s infinite;
+    }
+  </style>
+
   <g
      id="layer1"
      transform="translate(-15.341256,-77.54784)">
@@ -53,9 +68,8 @@
        x="46.501308"
        y="66.734703"
        id="text4"
-       transform="matrix(2.7098895,0,0,2.7098895,-111.84403,-82.577647)"><tspan
-         x="46.501308"
-         y="66.734703"
-         id="tspan1">Hi, I am Aditya</tspan></text>
+       transform="matrix(2.7098895,0,0,2.7098895,-111.84403,-82.577647)">
+      <tspan x="46.501308" y="66.734703" id="tspan1">Hi, I am Aditya</tspan>
+    </text>
   </g>
 </svg>
