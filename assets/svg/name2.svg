@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1320 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face {
+        font-family: "PixelFont";
+        src: url('https://github.com/Fairtexas5/Fairtexas5.github.io/blob/main/assets/font/Pixel.woff2') format('woff');
+      }
+
+      text {
+        font-family: "PixelFont", monospace;
+        font-size: 140px;
+        fill: #fff;
+        text-anchor: middle;
+        animation: glitch 1s infinite;
+      }
+
+      @keyframes glitch {
+        0% { transform: translate(0px, 0px); opacity: 1; }
+        20% { transform: translate(-3px, 3px); opacity: 0.8; }
+        40% { transform: translate(3px, -3px); opacity: 1; }
+        60% { transform: translate(-3px, 3px); opacity: 0.8; }
+        80% { transform: translate(3px, -3px); opacity: 1; }
+        100% { transform: translate(0px, 0px); opacity: 1; }
+      }
+
+      .glitch1 {
+        fill: red;
+        transform: translate(-2px, 2px);
+        opacity: 0.8;
+      }
+
+      .glitch2 {
+        fill: blue;
+        transform: translate(2px, -2px);
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+
+  <text x="50%" y="50%" dy=".35em" class="glitch1">ADITYA SINGH</text>
+  <text x="50%" y="50%" dy=".35em" class="glitch2">ADITYA SINGH</text>
+  <text x="50%" y="50%" dy=".35em">ADITYA SINGH</text>
+</svg>
