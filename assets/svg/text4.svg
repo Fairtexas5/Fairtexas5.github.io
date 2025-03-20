@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="172.14674mm"
+   height="20.718187mm"
+   viewBox="0 0 172.14674 20.718187"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient21">
+      <stop
+         style="stop-color:#fe586e;stop-opacity:1;"
+         offset="0"
+         id="stop22" />
+      <stop
+         style="stop-color:#ff6363;stop-opacity:1;"
+         offset="0.19266054"
+         id="stop24" />
+      <stop
+         style="stop-color:#d6028d;stop-opacity:1;"
+         offset="0.36697248"
+         id="stop25" />
+      <stop
+         style="stop-color:#4d0d59;stop-opacity:1;"
+         offset="0.56422019"
+         id="stop26" />
+      <stop
+         style="stop-color:#181250;stop-opacity:1;"
+         offset="1"
+         id="stop23" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient21"
+       id="linearGradient23"
+       x1="46.933754"
+       y1="62.912003"
+       x2="110.45913"
+       y2="62.912003"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-15.341256,-77.54784)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.7px;font-family:'Pixel Game';-inkscape-font-specification:'Pixel Game';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:78.0792;fill:url(#linearGradient23);fill-opacity:1;fill-rule:nonzero;stroke-width:0.264583"
+       x="46.501308"
+       y="66.734703"
+       id="text4"
+       transform="matrix(2.7098895,0,0,2.7098895,-111.84403,-82.577647)"><tspan
+         x="46.501308"
+         y="66.734703"
+         id="tspan1">Hi, I am Aditya</tspan></text>
+  </g>
+</svg>
