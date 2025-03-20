@@ -1,43 +1,49 @@
-<svg viewBox="0 0 1320 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      @font-face {
-        font-family: "PixelFont";
-        src: url('https://github.com/Fairtexas5/Fairtexas5.github.io/blob/main/assets/font/Pixel.woff2') format('woff');
-      }
-
-      text {
-        font-family: "PixelFont", monospace;
-        font-size: 140px;
-        fill: #fff;
-        text-anchor: middle;
-        animation: glitch 1s infinite;
-      }
-
-      @keyframes glitch {
-        0% { transform: translate(0px, 0px); opacity: 1; }
-        20% { transform: translate(-3px, 3px); opacity: 0.8; }
-        40% { transform: translate(3px, -3px); opacity: 1; }
-        60% { transform: translate(-3px, 3px); opacity: 0.8; }
-        80% { transform: translate(3px, -3px); opacity: 1; }
-        100% { transform: translate(0px, 0px); opacity: 1; }
-      }
-
-      .glitch1 {
-        fill: red;
-        transform: translate(-2px, 2px);
-        opacity: 0.8;
-      }
-
-      .glitch2 {
-        fill: blue;
-        transform: translate(2px, -2px);
-        opacity: 0.8;
-      }
-    </style>
-  </defs>
-
-  <text x="50%" y="50%" dy=".35em" class="glitch1">ADITYA SINGH</text>
-  <text x="50%" y="50%" dy=".35em" class="glitch2">ADITYA SINGH</text>
-  <text x="50%" y="50%" dy=".35em">ADITYA SINGH</text>
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="600px" height="100px" viewBox="0 0 600 100" style="background: black; display: block; margin: 0 auto;">
+<style type="text/css">
+<![CDATA[
+	text {
+		filter: url(#filter);
+		fill: white;
+    	font-family: 'Share Tech Mono', monospace;
+    	font-size: 100px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+]]>
+</style>
+	<defs>
+		<filter id="filter">
+		    <feFlood flood-color="black" result="black" />
+		    <feFlood flood-color="red" result="flood1" />
+		    <feFlood flood-color="limegreen" result="flood2" />
+			<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+			<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+			<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+			<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
+		    <feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+		    <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+		  
+		   <feMerge x="0" width="100%" result="merge1">
+				<feMergeNode in = "black" />
+				<feMergeNode in = "comp1" />
+				<feMergeNode in = "off1b" />
+				<animate attributeName="y" dur ="4s" values = '104px; 30px; 105px; 2px; 50px; 40px; 104px; 70px; 10px; 30px; 104px; 102px' keyTimes = '0; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1' repeatCount = "indefinite" />
+			</feMerge>
+			<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+				<feMergeNode in = "black" />
+				<feMergeNode in = "comp2" />
+				<feMergeNode in = "off2b" />
+				<animate attributeName="y" dur ="4s" values = '103px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px' keyTimes = '0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1' repeatCount = "indefinite" />
+			</feMerge>
+			<feMerge>
+				<feMergeNode in="SourceGraphic" />
+				<feMergeNode in="merge1" />
+				<feMergeNode in="merge2" />
+			</feMerge>
+		</filter>
+	</defs>
+	<g>
+		<text x="0" y="100">SVG GLITCH</text>
+	</g>
 </svg>
